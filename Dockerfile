@@ -12,4 +12,4 @@ WORKDIR /app
 COPY --from=build /app/publish .
 ENV ASPNETCORE_URLS=http://0.0.0.0:10000
 EXPOSE 10000
-ENTRYPOINT ["dotnet", "wt-lab6-6minimalapi-strelchonok.dll"]
+ENTRYPOINT ["dotnet", "wt-lab7-7postgres-efcore-strelchonok.dll"]

@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\wt-lab6-6minimalapi-strelchonok\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{042E1528-65D2-2E34-5493-DD1BD2ABFDF6}|wt-lab6-6minimalapi-strelchonok.csproj|c:\\users\\user\\wt-lab6-6minimalapi-strelchonok\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{042E1528-65D2-2E34-5493-DD1BD2ABFDF6}|wt-lab6-6minimalapi-strelchonok.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{042E1528-65D2-2E34-5493-DD1BD2ABFDF6}|wt-lab6-6minimalapi-strelchonok.csproj|c:\\users\\user\\wt-lab6-6minimalapi-strelchonok\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{042E1528-65D2-2E34-5493-DD1BD2ABFDF6}|wt-lab6-6minimalapi-strelchonok.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{042E1528-65D2-2E34-5493-DD1BD2ABFDF6}|wt-lab6-6minimalapi-strelchonok.csproj|c:\\users\\user\\wt-lab6-6minimalapi-strelchonok\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{042E1528-65D2-2E34-5493-DD1BD2ABFDF6}|wt-lab6-6minimalapi-strelchonok.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{042E1528-65D2-2E34-5493-DD1BD2ABFDF6}|wt-lab6-6minimalapi-strelchonok.csproj|c:\\users\\user\\wt-lab6-6minimalapi-strelchonok\\readme.md||{B3984FB3-6A50-488A-A8A5-1EA6929ADF43}",
+      "RelativeMoniker": "D:0:0:{042E1528-65D2-2E34-5493-DD1BD2ABFDF6}|wt-lab6-6minimalapi-strelchonok.csproj|solutionrelative:readme.md||{B3984FB3-6A50-488A-A8A5-1EA6929ADF43}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{042E1528-65D2-2E34-5493-DD1BD2ABFDF6}|wt-lab6-6minimalapi-strelchonok.csproj|c:\\users\\user\\wt-lab6-6minimalapi-strelchonok\\data\\bookstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{042E1528-65D2-2E34-5493-DD1BD2ABFDF6}|wt-lab6-6minimalapi-strelchonok.csproj|solutionrelative:data\\bookstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{042E1528-65D2-2E34-5493-DD1BD2ABFDF6}|wt-lab6-6minimalapi-strelchonok.csproj|c:\\users\\user\\wt-lab6-6minimalapi-strelchonok\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{042E1528-65D2-2E34-5493-DD1BD2ABFDF6}|wt-lab6-6minimalapi-strelchonok.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{042E1528-65D2-2E34-5493-DD1BD2ABFDF6}|wt-lab6-6minimalapi-strelchonok.csproj|c:\\users\\user\\wt-lab6-6minimalapi-strelchonok\\wt-lab6-6minimalapi-strelchonok.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{042E1528-65D2-2E34-5493-DD1BD2ABFDF6}|wt-lab6-6minimalapi-strelchonok.csproj|solutionrelative:wt-lab6-6minimalapi-strelchonok.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\user\\wt-lab6-6minimalapi-strelchonok\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\user\\wt-lab6-6minimalapi-strelchonok\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-22T08:36:36.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\user\\wt-lab6-6minimalapi-strelchonok\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "C:\\Users\\user\\wt-lab6-6minimalapi-strelchonok\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-22T08:28:34.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\user\\wt-lab6-6minimalapi-strelchonok\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\user\\wt-lab6-6minimalapi-strelchonok\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-10-22T08:20:55.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookStore.cs",
+              "DocumentMoniker": "C:\\Users\\user\\wt-lab6-6minimalapi-strelchonok\\Data\\BookStore.cs",
+              "RelativeDocumentMoniker": "Data\\BookStore.cs",
+              "ToolTip": "C:\\Users\\user\\wt-lab6-6minimalapi-strelchonok\\Data\\BookStore.cs",
+              "RelativeToolTip": "Data\\BookStore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T18:52:59.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\user\\wt-lab6-6minimalapi-strelchonok\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "Models\\Book.cs",
+              "ToolTip": "C:\\Users\\user\\wt-lab6-6minimalapi-strelchonok\\Models\\Book.cs",
+              "RelativeToolTip": "Models\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T18:49:15.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "wt-lab6-6minimalapi-strelchonok.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\wt-lab6-6minimalapi-strelchonok\\wt-lab6-6minimalapi-strelchonok.csproj",
+              "RelativeDocumentMoniker": "wt-lab6-6minimalapi-strelchonok.csproj",
+              "ToolTip": "C:\\Users\\user\\wt-lab6-6minimalapi-strelchonok\\wt-lab6-6minimalapi-strelchonok.csproj",
+              "RelativeToolTip": "wt-lab6-6minimalapi-strelchonok.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-21T18:38:35.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\wt-lab6-6minimalapi-strelchonok\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\user\\wt-lab6-6minimalapi-strelchonok\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAAAFAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T18:04:18.947Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
