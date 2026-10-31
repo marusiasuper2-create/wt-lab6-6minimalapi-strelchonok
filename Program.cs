@@ -4,18 +4,24 @@ using wt_lab7_7postgres_efcore_strelchonok.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// 1. Получаем строку подключения из конфигурации (для локального запуска)
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+// 2. Получаем DATABASE_URL из переменных окружения (для Render)
 var databaseUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
 
 if (!string.IsNullOrWhiteSpace(databaseUrl))
 {
-    // Парсим URL, который выдает Render
     var uri = new Uri(databaseUrl);
     var userInfo = uri.UserInfo.Split(':', 2);
 
+    // Если порт не указан (Render часто не указывает), подставляем стандартный 5432
+    var dbPort = uri.Port > 0 ? uri.Port : 5432;
+    var dbName = uri.AbsolutePath.TrimStart('/');
+
     connectionString = $"Host={uri.Host};" +
-                       $"Port={uri.Port};" +
-                       $"Database={uri.AbsolutePath.TrimStart('/')};" +
+                       $"Port={dbPort};" + // <--- ИСПОЛЬЗУЕМ dbPort ЗДЕСЬ
+                       $"Database={dbName};" +
                        $"Username={Uri.UnescapeDataString(userInfo[0])};" +
                        $"Password={Uri.UnescapeDataString(userInfo[1])};" +
                        "SSL Mode=Disable";
@@ -29,7 +35,7 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// 2. Автоматическое применение миграций при запуске
+// Автоматическое применение миграций при запуске
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
@@ -49,23 +55,22 @@ app.MapGet("/api/info", () =>
     return new { Application = "Web Technologies", Technology = "Minimal API", Version = "1.0" };
 });
 
-//LINQ-запросы (ДОЛЖНЫ БЫТЬ ВЫШЕ чем /{id})
+// LINQ-запросы (ДОЛЖНЫ БЫТЬ ВЫШЕ чем /{id})
 // Дороже 100
 app.MapGet("/api/books/expensive", async (AppDbContext db) =>
     Results.Ok(await db.Books.Where(b => b.Price > 100).ToListAsync()));
 
-//cорт по цене
+// Сорт по цене
 app.MapGet("/api/books/sorted", async (AppDbContext db) =>
     Results.Ok(await db.Books.OrderBy(b => b.Price).ToListAsync()));
 
-//доступные книги, сорт по названию
+// Доступные книги, сорт по названию
 app.MapGet("/api/books/available", async (AppDbContext db) =>
     Results.Ok(await db.Books.Where(b => b.IsAvailable).OrderBy(b => b.Title).ToListAsync()));
 
-//свой запрос (книги старше 1900 года)
+// Свой запрос (книги старше 1900 года)
 app.MapGet("/api/books/classic", async (AppDbContext db) =>
     Results.Ok(await db.Books.Where(b => b.Year < 1900).ToListAsync()));
-
 
 // 4. CRUD операции
 // GET: Получение списка с фильтрацией
@@ -118,41 +123,6 @@ app.MapPut("/api/books/{id}", async (int id, Book updatedBook, AppDbContext db) 
 app.MapDelete("/api/books/{id}", async (int id, AppDbContext db) =>
 {
     var book = await db.Books.FirstOrDefaultAsync(b => b.Id == id);
-    if (book == null) return Results.NotFound();
-
-    db.Books.Remove(book);
-    await db.SaveChangesAsync();
-    return Results.NoContent();
-});
-
-//POST добавление
-app.MapPost("/api/books", async (Book book, AppDbContext db) =>
-{
-    db.Books.Add(book);
-    await db.SaveChangesAsync();
-    return Results.Created($"/api/books/{book.Id}", book);
-});
-
-//PUT изменение
-app.MapPut("/api/books/{id}", async (int id, Book updatedBook, AppDbContext db) =>
-{
-    var book = await db.Books.FirstOrDefaultAsync(x => x.Id == id);
-    if (book == null) return Results.NotFound();
-
-    book.Title = updatedBook.Title;
-    book.Author = updatedBook.Author;
-    book.Year = updatedBook.Year;
-    book.Price = updatedBook.Price;
-    book.IsAvailable = updatedBook.IsAvailable;
-
-    await db.SaveChangesAsync();
-    return Results.Ok(book);
-});
-
-//DELETE удаление
-app.MapDelete("/api/books/{id}", async (int id, AppDbContext db) =>
-{
-    var book = await db.Books.FirstOrDefaultAsync(x => x.Id == id);
     if (book == null) return Results.NotFound();
 
     db.Books.Remove(book);
